@@ -1,3 +1,7 @@
+/* Inline video playback for iPhone
+ Copyright (c) 2016 Amir Chervinsky
+ https://github.com/amirch1/VideoInline */
+
 'use strict';
 (function($) {
 	$(window).load(function() {
