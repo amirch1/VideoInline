@@ -1,0 +1,27 @@
+.inlinePlayer{
+    position: relative;
+    text-align: center;
+}
+.inlinePlayer video{
+    position: absolute;
+    left: 0;
+}
+.inlinePlayer video::-webkit-media-controls{
+    display: none;
+}
+.inlinePlayer .playBtn{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 0 auto;
+    top: 35%;
+    display: block;
+}
+.inlinePlayer .slider{
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 10px;
+    display: block;
+}
