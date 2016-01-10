@@ -11,7 +11,7 @@
 			var paused = true;
 			var firstPlay = true;
 			var renderIntervalID = null;
-			var renderIntervalTime = 50;
+			var renderIntervalTime = 50; // frame rate: 20 fps
 			var sliderDragged = false;
 
 			var hideControlsTimeout = 2500;
@@ -67,7 +67,7 @@
 				},hideControlsTimeout)
 			}
 
-			// play button
+			// play button toggles playback
 			$(".playBtn").on("click", function(){
 				if (firstPlay){
 					firstPlay = false;
@@ -82,7 +82,7 @@
 				hideControls();
 			});
 
-			// slider
+			// slider interaction: seek
 			$(".slider").on("touchstart", function(){
 				sliderDragged = true;
 				if (hideControlsTimeoutID){
@@ -99,7 +99,7 @@
 				hideControls();
 			});
 
-			// movie end
+			// movie end event rewinds the video and shows controls
 			$(audioPlayer).on("ended", function(){
 				pause();
 				paused = true;
@@ -109,7 +109,7 @@
 				$(".slider").show();
 			});
 
-			// video click shows controls
+			// click on video shows controls
 			$(video).on("click", function(){
 				$(".playBtn").fadeIn();
 				$(".slider").fadeIn();
