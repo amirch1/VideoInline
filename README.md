@@ -19,4 +19,4 @@ Use [this link](http://amirch1.github.io/VideoInline/) on your iPhone to view th
  
 
 ##License
-The code is distributed under the MIT License (MIT). You can use and change it freely as long as you include my copyright notice.
+The code is distributed under the MIT License (MIT). You can use and change it freely as long as you include the copyright notice.
